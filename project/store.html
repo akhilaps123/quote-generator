@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body><script type="text/javascript">
+	for( i=0;i<=5;i++){
+	let code = parseInt(prompt("Enter a product code:\nCODE\n :apple\n banana\n mango\n"));
+	let qty = parseInt(prompt("Enter a quantity"));
+	let total = " ";
+	
+	//total price calculation using switch
+	
+	switch (code){
+		case 1:
+		total = qty*30;
+		console.log(`product:Apple | quantity : ${qty} total price:${total} `);
+		break;
+
+		case 2:
+		total = qty*10;
+		console.log(`product:Banana | quantity : ${qty} total price:${total} `);
+		break;
+
+		case 3:
+		total = qty*50;
+		console.log(`product:Mango | quantity : ${qty} total price: ${total}`);
+		break;
+
+		default:
+		console.log(`Invalid product code entered`);
+		continue;//skip this iteration
+
+
+	}
+	if (total>100){
+		console.log("High price");
+	}else{
+		console.log("Normal price");
+	}
+}
+
+
+
+</script>
+
+</body>
+</html>
