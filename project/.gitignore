@@ -1,5 +1,0 @@
-# Ignore everything
-*
-# Keep only quote generator.html
-!quote generator.html
-!.gitignore
